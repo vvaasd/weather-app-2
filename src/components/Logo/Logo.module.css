@@ -1,0 +1,6 @@
+@media (max-width: 768px) {
+  .logo-small {
+    width: clamp(2rem, -4.875rem + 17.19vw, 3.375rem);
+    height: clamp(2rem, -3rem + 12.5vw, 3rem);
+  }
+}

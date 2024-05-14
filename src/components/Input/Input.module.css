@@ -1,0 +1,86 @@
+.form {
+  position: relative;
+}
+
+.input {
+  position: relative;
+  border-radius: 8px;
+  background: var(--color-bg);
+  border: none;
+
+  width: 506px;
+  height: 48px;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+
+  letter-spacing: 0px;
+  color: var(--color-text-card);
+
+  text-align: left;
+  outline: none;
+
+  padding: 12px 16px;
+}
+
+.input::placeholder {
+  color: rgb(112, 112, 112);
+  font-size: 20px;
+  line-height: 24;
+}
+
+.input:hover,
+.input:focus {
+  background: var(--color-bg-hover);
+}
+
+.btn {
+  display: block;
+  background-image: url('./../../assets/icon/search.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 48px;
+  width: 48px;
+  position: absolute;
+  background-color: transparent;
+  border: none;
+  right: 0;
+  top: 0;
+  padding: 12px;
+}
+
+@media (max-width: 886px) {
+  .input {
+    width: clamp(30.188rem, -17.813rem + 100vw, 37.563rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .input {
+    width: clamp(25.563rem, 2.438rem + 57.81vw, 30.188rem);
+    height: clamp(2rem, -3rem + 12.5vw, 3rem);
+    padding: clamp(0.5rem, -0.75rem + 3.13vw, 0.75rem)
+      clamp(0.75rem, -0.5rem + 3.13vw, 1rem);
+    font-size: clamp(0.875rem, -2.25rem + 7.81vw, 1.5rem);
+    line-height: clamp(1rem, -1.5rem + 6.25vw, 1.5rem);
+  }
+  .input::placeholder {
+    font-size: clamp(0.875rem, -1rem + 4.69vw, 1.25rem);
+    line-height: clamp(1rem, -1.5rem + 6.25vw, 1.5rem);
+  }
+  .btn {
+    height: clamp(2rem, -3rem + 12.5vw, 3rem);
+    background-size: clamp(0.75rem, -3rem + 9.38vw, 1.5rem);
+    width: clamp(2rem, -3rem + 12.5vw, 3rem);
+    padding: clamp(0.5rem, -0.75rem + 3.13vw, 0.75rem);
+  }
+}
+
+@media (max-width: 640px) {
+  .input {
+    width: clamp(16.438rem, 3.525rem + 55.09vw, 25.563rem);
+  }
+  .form {
+    margin-left: 16px;
+  }
+}

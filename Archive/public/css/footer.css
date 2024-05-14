@@ -1,0 +1,32 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 32px;
+}
+
+.footer__copyright,
+.footer__link {
+    color: rgb(245, 244, 244);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: center;
+}
+
+@media (max-width: 1023px) {
+    .footer {
+        padding-top: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer {
+        padding-top: 16px;
+    }
+    .footer__copyright,
+    .footer__link {
+        font-size: 12px;
+        line-height: 16px;
+    }
+}

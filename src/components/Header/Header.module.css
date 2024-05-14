@@ -1,0 +1,23 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 32px;
+}
+@media (max-width: 886px) {
+  .header {
+    padding-bottom: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding-bottom: clamp(1rem, -1.5rem + 6.25vw, 1.5rem);
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    padding-bottom: clamp(1rem, -1.5rem + 6.25vw, 1.5rem);
+  }
+}

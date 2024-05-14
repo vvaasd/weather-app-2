@@ -1,0 +1,34 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  padding-top: 32px;
+}
+
+.copyright,
+.link {
+  color: rgb(245, 244, 244);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin: 0;
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    padding-top: clamp(1.5rem, -1.71rem + 5.8vw, 2rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding-top: clamp(1rem, -1.5rem + 6.25vw, 1.5rem);
+  }
+
+  .copyright,
+  .link {
+    font-size: clamp(0.75rem, -0.5rem + 3.13vw, 1rem);
+    line-height: clamp(1rem, -0.25rem + 3.13vw, 1.25rem);
+  }
+}

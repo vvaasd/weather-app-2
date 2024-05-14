@@ -1,0 +1,136 @@
+.card {
+  height: calc(196px - 32px);
+  border-radius: 8px;
+  background: var(--color-bg);
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+}
+
+.card:first-child .box {
+  justify-content: space-between;
+}
+
+.title {
+  color: var(--color-text-card);
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.img {
+  margin-bottom: 16px;
+}
+
+.degree {
+  color: var(--color-text-card);
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 16px;
+}
+
+.progress-bar-wrapper {
+  position: relative;
+}
+
+.progress-bar {
+  display: block;
+  width: 100%;
+  height: 8px;
+  appearance: none;
+  pointer-events: none;
+  background-color: rgba(218, 218, 218, 0.4);
+  margin-bottom: 8px;
+  border-radius: 8px;
+  border-color: transparent;
+
+  mask: radial-gradient(
+    circle at calc(50% + clamp(0.188rem, -0.125rem + 0.78vw, 0.25rem)),
+    transparent clamp(0.313rem, 0.78vw, 0.375rem),
+    black clamp(0.313rem, 0.78vw, 0.375rem),
+    black clamp(0.313rem, 0.78vw, 0.375rem)
+  );
+}
+
+.progress-bar::-webkit-slider-thumb {
+  opacity: 0;
+}
+
+.ellipse {
+  display: block;
+  position: absolute;
+
+  width: 0.5rem;
+  height: 0.5rem;
+
+  border-radius: 50%;
+
+  background-color: var(--color-text);
+
+  top: 0;
+  left: 50%;
+}
+
+.box {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.indicator {
+  color: rgb(57, 57, 57);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: left;
+  white-space: nowrap;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .card {
+    height: clamp(7.75rem, -4.75rem + 31.25vw, 10.25rem);
+    padding: clamp(0.75rem, -0.5rem + 3.13vw, 1rem);
+  }
+  .title {
+    font-size: clamp(0.75rem, -0.5rem + 3.13vw, 1rem);
+    line-height: clamp(1rem, -0.25rem + 3.13vw, 1.25rem);
+    margin-bottom: clamp(0.75rem, -0.5rem + 3.13vw, 1rem);
+  }
+  .img {
+    width: clamp(1.5rem, -1rem + 6.25vw, 2rem);
+    height: clamp(1.5rem, -1rem + 6.25vw, 2rem);
+    margin-bottom: 12px;
+  }
+  .degree {
+    font-size: clamp(1.375rem, -1.75rem + 7.81vw, 2rem);
+    line-height: clamp(1.375rem, -1.75rem + 7.81vw, 2rem);
+    margin-bottom: clamp(0.75rem, -0.5rem + 3.13vw, 1rem);
+  }
+  .progress-bar {
+    margin-bottom: clamp(0.375rem, -0.25rem + 1.56vw, 0.5rem);
+    height: clamp(0.375rem, -0.25rem + 1.56vw, 0.5rem);
+  }
+  .ellipse {
+    width: clamp(0.375rem, -0.25rem + 1.56vw, 0.5rem);
+    height: clamp(0.375rem, -0.25rem + 1.56vw, 0.5rem);
+  }
+  .indicator {
+    font-size: clamp(0.625rem, 1.56vw, 0.75rem);
+    line-height: clamp(0.75rem, -0.5rem + 3.13vw, 1rem);
+  }
+  .progress-bar {
+    height: clamp(0.375rem, -0.25rem + 1.56vw, 0.5rem);
+  }
+}

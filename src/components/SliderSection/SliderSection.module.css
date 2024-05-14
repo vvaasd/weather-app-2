@@ -1,0 +1,94 @@
+.slider {
+  padding: 32px 0;
+}
+
+.tabs-wrapper {
+  display: flex;
+  gap: 32px;
+  align-items: center;
+}
+
+.tabs-header {
+  color: var(--color-text);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 32px;
+  letter-spacing: 0px;
+  text-align: center;
+
+  margin: 0;
+}
+
+.tabs {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+.tab {
+  position: relative;
+  background: none;
+  border: none;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: center;
+  cursor: pointer;
+
+  color: rgb(166, 166, 166);
+  border: none;
+
+  padding: 0;
+  transition: color 0.01s ease-in-out;
+}
+
+.tab:disabled {
+  color: var(--color-text);
+}
+
+.tab:disabled:after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: -3px;
+  left: -1px;
+
+  width: calc(100% + 2px);
+  height: clamp(0.063rem, -0.25rem + 0.78vw, 0.125rem);
+  border-radius: clamp(0.063rem, -0.25rem + 0.78vw, 0.125rem);
+
+  background: var(--color-text);
+}
+
+@media (max-width: 886px) {
+  .slider {
+    padding: 24px 0;
+  }
+  .tabs-wrapper,
+  .tabs {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .slider {
+    padding: clamp(1rem, -1.5rem + 6.25vw, 1.5rem) 0;
+  }
+  .tabs,
+  .tabs-wrapper {
+    gap: clamp(1rem, -1.5rem + 6.25vw, 1.5rem);
+  }
+  .tabs-header {
+    font-size: clamp(1rem, -1.5rem + 6.25vw, 1.5rem);
+    line-height: clamp(1.25rem, -2.5rem + 9.38vw, 2rem);
+  }
+  .tab {
+    font-size: clamp(0.75rem, -0.5rem + 3.13vw, 1rem);
+    line-height: clamp(1rem, -0.25rem + 3.13vw, 1.25rem);
+  }
+}
+
+@media (max-width: 640px) {
+}

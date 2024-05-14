@@ -1,0 +1,47 @@
+[
+  {
+    "title": "Влажность",
+    "value": "75",
+    "measurement": "%",
+    "hasProgressBar": true,
+    "meaning": "0%",
+    "meaningEnd": "100%"
+  },
+  {
+    "title": "Давление",
+    "value": "761",
+    "measurement": "",
+    "hasProgressBar": true,
+    "meaning": "Повышенное",
+    "meaningEnd": ""
+  },
+  {
+    "title": "Видимость",
+    "value": "28",
+    "measurement": "км",
+    "hasProgressBar": true,
+    "meaning": "Нормальная",
+    "meaningEnd": ""
+  },
+  {
+    "title": "Рассвет",
+    "value": "8:42",
+    "measurement": "",
+    "hasProgressBar": false,
+    "meaning": "Прошло: 02:47"
+  },
+  {
+    "title": "Закат",
+    "value": "16:37",
+    "measurement": "",
+    "hasProgressBar": false,
+    "meaning": "Осталось: 05:08"
+  },
+  {
+    "title": "Сила ветра",
+    "value": "2",
+    "measurement": "м/с",
+    "hasProgressBar": false,
+    "meaning": "Северо-западный"
+  }
+]

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="public/css/style.css" />
+    <script src="public/js/main.js" type="module"></script>
+    <title>WeatherApp</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <a class="logo" href="index.html">
+          <picture>
+            <source
+              srcset="public/images/logoSmall.svg"
+              media="(max-width: 1023px)"
+              alt="Логотип"
+            />
+            <img class="logoSmall" src="public/images/logo.svg" alt="Логотип" />
+          </picture>
+        </a>
+        <form class="header__form" action="#">
+          <input
+            id="search"
+            class="header__input"
+            type="search"
+            placeholder="Поиск по городу"
+          />
+          <button id="search_button" class="header__btn" type="submit"></button>
+        </form>
+      </header>
+      <main>
+        <section class="weather">
+          <div class="weather__wrap">
+            <div class="weather__top">
+              <h2 class="weather__city">Москва</h2>
+              <time datetime="01-06" class="weather__text"
+                >Суббота, 06 января</time
+              >
+              <time datetime="11h 29m" class="weather__text">11:29</time>
+            </div>
+            <p class="weather__degrees">-7°</p>
+            <div class="weather__bottom">
+              <figure class="weather__inner">
+                <img src="public/images/clouds.svg" alt="Облачно" />
+                <figcaption class="weather__text weather__text--margin">
+                  Облачно
+                </figcaption>
+              </figure>
+              <p class="weather__text">Ощущается как -11°</p>
+            </div>
+          </div>
+          <div class="weather__items"></div>
+        </section>
+        <section class="slider">
+          <header class="slider__header">
+            <h2 class="slider__title">Прогноз:</h2>
+            <div class="slider__wrap">
+              <div class="slider__tabHeader activeTitle">на 24 часа</div>
+              <div class="slider__tabHeader">на 5 дней</div>
+            </div>
+          </header>
+          <div class="slider__body">
+            <button type="button" class="slider__btn">
+              <svg
+                class="slider__icon"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M16 3.58789L7 12.5879L16 21.5879"
+                  stroke="#545454"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+            <div id="onDay" class="slider__tabs activeTab">
+              <!-- карточки погоды на 24 часа -->
+            </div>
+            <div id="onFiveDay" class="slider__tabs">
+              <!-- карточки погоды на 5 дней -->
+            </div>
+            <button type="button" class="slider__btn">
+              <svg
+                class="slider__icon"
+                viewBox="0 0 24 25"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M8 21.5879L17 12.5879L8 3.58789"
+                  stroke="#545454"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </button>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <p class="footer__copyright">
+          Проект выполнен в рамках стажировки
+          <a class="footer__link" target="_blank" href="https://preax.ru"
+            >PREAX</a
+          >
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
