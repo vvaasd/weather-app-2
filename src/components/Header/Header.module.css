@@ -1,0 +1,122 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-block: clamp(1.5rem, 0.75rem + 1.56vw, 2rem);
+}
+
+.logo {
+  margin-right: 1rem;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+
+  width: 506px;
+  border-radius: var(--border-radius);
+
+  transition: background-color 0.08s ease-in;
+  background-color: var(--card-bg-color);
+}
+
+.search-form:hover {
+  background-color: var(--light-color-accent);
+}
+
+.search-form__input {
+  width: calc(100% - 48px);
+  padding: 0.75rem 0rem 0.75rem 1rem;
+  height: 1.5rem;
+
+  background: none;
+  border: none;
+
+  font-size: 1.25rem;
+  color: var(--dark-color);
+
+  font-variant-numeric: lining-nums;
+}
+
+.search-form__input::placeholder {
+  color: var(--gray-color);
+}
+
+.search-form__input:focus,
+.search-form__input:active {
+  outline: none;
+}
+
+.search-form__btn {
+  border: none;
+  background: none;
+  padding: 0.75rem 1rem;
+  height: 1.5rem;
+
+  cursor: pointer;
+}
+
+.search-form__btn-icon {
+  display: block;
+  width: 24px;
+  height: 24px;
+}
+
+@media (max-width: 1024px) {
+  .header {
+    padding-block: clamp(1.5rem, -1.71rem + 5.8vw, 2rem);
+  }
+}
+
+@media (max-width: 886px) {
+  .search-form {
+    width: clamp(30.188rem, -17.813rem + 100vw, 37.563rem);
+  }
+  .header__logo {
+    display: none;
+  }
+
+  .header__logo-mini {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding-block: clamp(1rem, -1.5rem + 6.25vw, 1.5rem);
+  }
+
+  .header__logo-mini {
+    display: block;
+    width: clamp(2rem, -4.875rem + 17.19vw, 3.375rem);
+    height: clamp(2rem, -3rem + 12.5vw, 3rem);
+  }
+
+  .search-form {
+    width: clamp(25.563rem, 2.438rem + 57.81vw, 30.188rem);
+    height: clamp(2rem, -3rem + 12.5vw, 3rem);
+  }
+
+  .search-form__btn {
+    height: clamp(1rem, -1.5rem + 6.25vw, 1.5rem);
+
+    padding-block: clamp(0.5rem, -0.75rem + 3.13vw, 0.75rem);
+    padding-inline: clamp(0.75rem, -0.5rem + 3.13vw, 1rem);
+  }
+
+  .search-form__btn-icon {
+    height: clamp(1rem, -1.5rem + 6.25vw, 1.5rem);
+    width: clamp(1rem, -1.5rem + 6.25vw, 1.5rem);
+  }
+
+  .search-form {
+    width: clamp(25.563rem, 2.438rem + 57.81vw, 30.188rem);
+  }
+}
+
+@media (max-width: 640px) {
+  .search-form {
+    width: clamp(16.438rem, 3.525rem + 55.09vw, 25.563rem);
+  }
+}
