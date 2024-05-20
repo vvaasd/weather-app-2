@@ -10,6 +10,7 @@ export function Footer() {
             href="https://preax.ru"
             className={styles['preax-link']}
             target="_blank"
+            rel="noopener noreferrer"
           >
             PREAX
           </a>

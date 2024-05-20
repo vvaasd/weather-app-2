@@ -3,50 +3,42 @@
   backdrop-filter: blur(25px);
   border-radius: var(--border-radius);
 
-  max-width: calc(1120px - 64px);
+  width: calc(1120px - 64px);
 
-  padding: 0 clamp(1.5rem, 0.75rem + 1.56vw, 2rem);
-  margin: 2rem auto;
-}
-
-.weather {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-
-  padding-block: 2rem;
-  padding-inline: 0;
+  margin: 32px;
+  padding-inline: 32px;
 }
 
 @media (max-width: 1280px) {
   .container {
-    margin-inline: clamp(2rem, -10rem + 18.75vw, 5rem);
+    width: clamp(56rem, 16rem + 62.5vw, 66rem);
+    padding-inline: clamp(1.5rem, -0.5rem + 3.13vw, 2rem);
   }
 }
 
 @media (max-width: 1024px) {
   .container {
-    margin-inline: clamp(1.5rem, -1.71rem + 5.8vw, 2rem);
-    margin-block: clamp(1.5rem, -1.71rem + 5.8vw, 2rem);
-
-    padding-inline: clamp(1.5rem, -1.71rem + 5.8vw, 2rem);
+    width: clamp(49.375rem, 6.841rem + 76.81vw, 56rem);
+    margin: clamp(1.5rem, -1.71rem + 5.8vw, 2rem);
   }
 }
 
 @media (max-width: 886px) {
-  /**/
+  .container {
+    width: clamp(42.625rem, -1.307rem + 91.53vw, 49.375rem);
+  }
 }
 
 @media (max-width: 768px) {
   .container {
-    padding-inline: clamp(1rem, -1.5rem + 6.25vw, 1.5rem);
-
+    width: clamp(36rem, 2.875rem + 82.81vw, 42.625rem);
     margin: clamp(1rem, -1.5rem + 6.25vw, 1.5rem);
+    padding-inline: clamp(1rem, -1.5rem + 6.25vw, 1.5rem);
   }
+}
 
-  .weather {
-    flex-direction: column;
-    gap: 3rem;
-    padding-block: clamp(1rem, 0.523rem + 2.04vw, 1.5rem);
+@media (max-width: 640px) {
+  .container {
+    width: clamp(19.438rem, -4rem + 100vw, 36rem);
   }
 }

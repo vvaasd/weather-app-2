@@ -13,7 +13,6 @@ const IMAGE_NAMES = {
   surise: 'surise',
   sunset: 'sunset',
   wind: 'wind',
-  humidity: 'humidity',
 
   // Weather type
   dayClearSky: 'dayClearSky',

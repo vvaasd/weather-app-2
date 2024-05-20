@@ -121,12 +121,20 @@ li {
 }
 
 @media (max-width: 886px) {
+  .slider__cards {
+    gap: 0.75rem;
+  }
+
   .slider {
     margin-inline: 80px;
   }
 }
 
 @media (max-width: 768px) {
+  .slider__cards {
+    gap: clamp(0.5rem, -0.75rem + 3.13vw, 0.75rem);
+  }
+
   .forecast-slider__selection-btn {
     font-size: clamp(0.75rem, -0.5rem + 3.13vw, 1rem);
   }
