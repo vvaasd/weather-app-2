@@ -1,0 +1,171 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+
+    width: 126px;
+    height: 164px;
+
+    background-color: var(--card-bg-color);
+    border-radius: var(--border-radius);
+
+    padding: 1rem;
+
+    text-align: center;
+    color: var(--dark-color);
+}
+
+.cardHeader {
+    font-weight: 700;
+    font-size: 1rem;
+    line-height: 125%;
+    height: 1.25rem;
+
+    margin: 0;
+}
+
+.cardDegree {
+    font-size: 2rem;
+    line-height: 100%;
+
+    margin: 0;
+}
+
+.visualDegree {
+    position: relative;
+}
+
+.visualDegreeBar[type='range'] {
+    display: block;
+    appearance: none;
+    border-radius: var(--border-radius);
+
+    width: 126px;
+    height: 0.5rem;
+
+    background-color: var(--proggress-bar-bg-color);
+    mask: radial-gradient(circle at calc(50% + 4px),
+            transparent 6px,
+            var(--proggress-bar-bg-color) 6px,
+            var(--proggress-bar-bg-color) 6px);
+
+    margin-bottom: 0.5rem;
+}
+
+.visualDegreeBarEllipse {
+    display: block;
+    position: absolute;
+
+    width: 0.5rem;
+    height: 0.5rem;
+
+    border-radius: 50%;
+
+    background-color: var(--light-color);
+
+    top: 0;
+    left: 50%;
+}
+
+.visualDegreeBarPressure[type='range'] {
+    background-image: linear-gradient(to right,
+            var(--light-color-accent) 0%,
+            var(--gray-dark-color) 40%,
+            var(--gray-dark-color) 60%,
+            var(--light-color-accent) 100%);
+}
+
+.visualDegree input[type='range']::-moz-range-thumb {
+    display: none;
+}
+
+.visualDegree input[type='range']::-webkit-slider-thumb {
+    display: none;
+}
+
+.visualDegreeValues {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+
+    font-size: 0.75rem;
+    line-height: 133%;
+
+    margin: 0;
+}
+
+.visualDegreeValuesMin {
+    margin: 0;
+}
+
+.visualDegreeValuesMax {
+    margin: 0;
+}
+
+.visualDegreeValuesComment {
+    color: var(--dark-color-accent);
+    text-align: center;
+    flex-grow: 1;
+
+    margin: 0;
+}
+
+
+@media (max-width: 886px) {
+    .card {
+        width: 131px;
+    }
+
+    .visualDegreeBar[type='range'] {
+        width: 131px;
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        gap: clamp(0.75rem, -0.5rem + 3.13vw, 1rem);
+
+        width: clamp(6.5rem, -1.938rem + 21.09vw, 8.188rem);
+        height: clamp(7.625rem, -5.5rem + 32.81vw, 10.25rem);
+
+        padding-inline: clamp(0.75rem, -0.5rem + 3.13vw, 1rem);
+        padding-top: clamp(0.75rem, -0.5rem + 3.13vw, 1rem);
+        padding-bottom: clamp(0.875rem, 0.25rem + 1.56vw, 1rem);
+    }
+
+    .cardHeader {
+        font-size: clamp(0.75rem, -0.5rem + 3.13vw, 1rem);
+    }
+
+    .cardDegree {
+        font-size: clamp(1.375rem, -1.75rem + 7.81vw, 2rem);
+    }
+
+    .visualDegreeBar[type='range'] {
+        width: clamp(6.5rem, -1.938rem + 21.09vw, 8.188rem);
+        height: clamp(0.375rem, -0.25rem + 1.56vw, 0.5rem);
+
+        margin-bottom: clamp(0.375rem, -0.25rem + 1.56vw, 0.5rem);
+    }
+
+    .visualDegreeBarEllipse {
+        width: clamp(0.375rem, -0.25rem + 1.56vw, 0.5rem);
+        height: clamp(0.375rem, -0.25rem + 1.56vw, 0.5rem);
+    }
+
+    .visualDegreeValues {
+        font-size: clamp(0.625rem, 1.56vw, 0.75rem);
+        line-height: clamp(0.75rem, -0.5rem + 3.13vw, 1rem);
+    }
+}
+
+@media (max-width: 640px) {
+    .visualDegreeBar[type='range'] {
+        width: clamp(4.688rem, 2.123rem + 10.94vw, 6.5rem);
+    }
+
+    .card {
+        width: clamp(4.625rem, 1.972rem + 11.32vw, 6.5rem);
+    }
+}

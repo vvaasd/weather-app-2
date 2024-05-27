@@ -1,0 +1,24 @@
+.icon {
+    height: clamp(1rem, -1.5rem + 6.25vw, 1.5rem);
+}
+
+.typeImg {
+    margin: 0;
+}
+
+.cardIcon {
+    width: 2rem;
+    height: 2rem;
+}
+
+@media (max-width: 768px) {
+    .typeImg {
+        width: clamp(1rem, -1.5rem + 6.25vw, 1.5rem);
+        height: clamp(1rem, -1.5rem + 6.25vw, 1.5rem);
+    }
+
+    .cardIcon {
+        width: clamp(1.5rem, -1rem + 6.25vw, 2rem);
+        height: clamp(1.5rem, -1rem + 6.25vw, 2rem);
+    }
+}

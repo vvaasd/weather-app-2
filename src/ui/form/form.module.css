@@ -1,0 +1,53 @@
+.form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 506px;
+  border-radius: var(--border-radius);
+
+  transition: background-color 0.08s ease-in;
+  background-color: var(--card-bg-color);
+}
+
+.form:hover {
+  background-color: var(--light-color-accent);
+}
+
+.hovered {
+  background-color: var(--light-color-accent);
+}
+
+.btn {
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 5px 15px 0;
+  cursor: pointer;
+}
+
+@media (max-width: 886px) {
+  .form {
+    width: clamp(30.188rem, -17.813rem + 100vw, 37.563rem);
+  }
+}
+
+@media (max-width: 768px) {
+  .form {
+    width: clamp(25.563rem, 2.438rem + 57.81vw, 30.188rem);
+  }
+}
+
+@media (max-width: 640px) {
+  .form {
+    width: clamp(16.438rem, 3.525rem + 55.09vw, 25.563rem);
+  }
+
+  .btn {
+    padding-right: 12px;
+  }
+
+  .btn svg {
+    width: 20px;
+    height: 20px;
+  }
+}

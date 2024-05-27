@@ -1,0 +1,22 @@
+.logo {
+    height: calc(2rem - 1px);
+    display: flex;
+    align-items: center;
+}
+
+.logoMini {
+    display: none;
+    width: 54px;
+    height: 48px;
+}
+
+@media (max-width: 886px) {
+
+    .logo {
+        display: none;
+    }
+
+    .logoMini {
+        display: block;
+    }
+}

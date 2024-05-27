@@ -1,0 +1,18 @@
+html,
+body {
+  font-family: 'Raleway';
+  font-variant-numeric: lining-nums;
+}
+
+body {
+  background-image: url('../img/bg-image.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-width: 375px;
+}
+
+.none {
+  display: none !important;
+}
+

@@ -1,0 +1,59 @@
+[
+  {
+    "id": 1,
+    "title": "Влажность",
+    "value": "75",
+    "measure": "%",
+    "progress": true,
+    "icon": "humidity",
+    "addictional": {
+      "minValue": "0%",
+      "maxValue": "100%"
+    }
+  },
+  {
+    "id": 2,
+    "title": "Давление",
+    "value": "761",
+    "measure": "",
+    "progress": true,
+    "icon": "pressure",
+    "addictional": "Повышенное",
+    "extraStyles": true
+  },
+  {
+    "id": 3,
+    "title": "Видимость",
+    "value": "28",
+    "measure": "км",
+    "progress": true,
+    "icon": "visibility",
+    "addictional": "Нормальная"
+  },
+  {
+    "id": 4,
+    "title": "Рассвет",
+    "value": "8:42",
+    "progress": false,
+    "icon": "sunrise",
+    "addictional": "Прошло: 02:47"
+  },
+  {
+    "id": 5,
+    "title": "Закат",
+    "value": "16:37",
+    "progress": false,
+    "icon": "sunset",
+    "addictional": "Осталось: 05:08"
+  },
+  {
+    "id": 6,
+    "title": "Сила ветра",
+    "value": "2",
+    "measure": "м/с",
+    "progress": false,
+    "icon": "wind",
+    "addictional": "Северо-западный",
+    "direction": "315"
+  }
+]

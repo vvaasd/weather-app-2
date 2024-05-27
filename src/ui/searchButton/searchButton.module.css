@@ -1,0 +1,18 @@
+.btn {
+    border: none;
+    background: none;
+    padding: 0.75rem 1rem;
+    height: 100%;
+
+    cursor: pointer;
+}
+
+
+
+@media (max-width: 768px) {
+    .btn {
+        height: clamp(1rem, -1.5rem + 6.25vw, 1.5rem);
+        padding-block: clamp(0.5rem, -0.75rem + 3.13vw, 0.75rem);
+        padding-inline: clamp(0.75rem, -0.5rem + 3.13vw, 1rem);
+    }
+}

@@ -1,0 +1,19 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding-block: 2rem;
+}
+
+@media (max-width: 1024px) {
+    .header {
+        padding-block: clamp(1.5rem, -1.71rem + 5.8vw, 2rem);
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding-block: clamp(1rem, -1.5rem + 6.25vw, 1.5rem);
+    }
+}
