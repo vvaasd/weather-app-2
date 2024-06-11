@@ -1,0 +1,40 @@
+.headerWrapper {
+  height: 112px;
+  width: 100%;
+}
+
+.header {
+  z-index: 1;
+  position: absolute;
+
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+
+  width: inherit;
+
+  padding: 32px;
+
+  transition: all 0.3s ease-out;
+}
+
+@media (max-width: 1023px) {
+  .headerWrapper {
+    height: 96px;
+  }
+
+  .header {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 767px) {
+  .headerWrapper {
+    height: 64px;
+  }
+
+  .header {
+    gap: 16px;
+    padding: 16px;
+  }
+}
