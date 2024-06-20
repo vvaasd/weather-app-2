@@ -1,0 +1,5 @@
+export { checkCity } from './checkCity.js'
+export { validateInputValue } from './validateInputValue.js'
+export { calсulateDirection } from './calсulateDirection.js'
+export { calculatePressure, getDescriptionPressure } from './calculatePressure.js'
+export { getTime } from './getTime.js'
