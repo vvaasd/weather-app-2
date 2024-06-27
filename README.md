@@ -1,14 +1,14 @@
 # WeatherApp
 deployed [here, on netify](https://vvaasd-weather-app-2.netlify.app) (Github Pages do not support dynamic sites)
 
-**Legacy** code mode
+Dev mode: **Legacy**
 
 Stack: **React**, **API**, JS, HTML, CSS. Builder: Create React App
 
 - Work with data from API (data about city, forecast)
 - hooks: useState, useEffect, useContext, useRef
 - Created custom React hook useClickOutside
-- Responsive Pixel Perfect layout (not in every branch)
+- Responsive Pixel Perfect layout (not in every task branch)
 - Modular CSS
 
 Within this project, trying to simulate real conditions, I completed technical tasks assigned to me and pushed them to remote repository (GitLab).
