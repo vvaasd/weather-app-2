@@ -6,6 +6,7 @@ Dev mode: **Legacy**
 Stack: **React**, **API**, JS, HTML, CSS. Builder: Create React App
 
 - Work with data from API (data about city, forecast)
+- Work with Local Storage
 - hooks: useState, useEffect, useContext, useRef
 - Created custom React hook useClickOutside
 - Responsive Pixel Perfect layout (not in every task branch)
