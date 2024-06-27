@@ -12,7 +12,7 @@ Stack: **React**, **API**, JS, HTML, CSS. Builder: Create React App
 - Modular CSS
 
 Within this project, trying to simulate real conditions, I completed technical tasks assigned to me and pushed them to remote repository (GitLab).
-After each task I was getting legacy code, so the quality of the code may vary from task to task.
+****After each task I was getting legacy code, so the quality of the code may vary from task to task.****
 
 How to run dev mode (Node required):
 
