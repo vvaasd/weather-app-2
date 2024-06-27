@@ -1,0 +1,33 @@
+.navButton {
+  height: 100%;
+  border-radius: 8px;
+  background: var(--neutral-tone-100);
+  color: var(--neutral-filled-400);
+  border: none;
+  cursor: pointer;
+  user-select: none;
+  transition: color 0.2s ease-in-out;
+  height: 48px;
+  padding: 12px 16px;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.navButton:hover {
+  background: var(--neutral-filled-200);
+}
+
+.navButton:disabled {
+  opacity: 0.3;
+}
+
+@media (max-width: 767px) {
+  .navButton {
+    height: 32px;
+    padding: 8px 12px;
+  }
+
+  .navButton svg {
+    width: 16px;
+    height: 16px;
+  }
+}
