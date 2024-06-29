@@ -5,10 +5,18 @@ const Footer = () => {
   return (
     <footer className={styles.footer}>
       <p className={clsx("descr", styles.descr)}>
-        Проект выполнен в рамках стажировки <a className={styles.link} href="https://preax.ru" target="_blank" rel="noreferrer">PREAX</a>
+        Проект{" "}
+        <a
+          className={styles.link}
+          href="https://vvaasd-weather-app-2.netlify.app"
+          target="_blank"
+          rel="noreferrer"
+        >
+          WeatherApp 2
+        </a>
       </p>
     </footer>
   );
-}
+};
 
 export default Footer;
