@@ -20,3 +20,5 @@ How to run dev mode (Node required):
 - clone repository (main branch). Terminal commands (use it in cloned repository):
 - npm i
 - npm run start
+
+Refactoring coming soon
